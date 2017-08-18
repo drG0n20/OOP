@@ -20,8 +20,8 @@ public class Circle {
         return _radius;
     }
 
-    public double setRadius(double radius) {
-        return _radius = radius;
+    public void setRadius(double radius) {
+        _radius = radius;
     }
 
     public String getColor() {

@@ -40,4 +40,18 @@ public class CircleTest {
         Circle circle = new Circle(2.0);
         Assert.assertEquals("Circle[radius=2.0,color=red]", circle.toString());
     }
+
+    @Test
+    public void circleSetRadiusTest() {
+        Circle circle = new Circle();
+        circle.setRadius(2.0);
+        Assert.assertEquals(2.0, circle.getRadius(), 0.1);
+    }
+
+    @Test
+    public void circleSetColorTest() {
+        Circle circle = new Circle();
+        circle.setColor("red");
+        Assert.assertEquals("red", circle.getColor());
+    }
 }

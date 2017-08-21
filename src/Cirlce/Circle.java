@@ -7,12 +7,12 @@ public class Circle {
     public Circle() {
     }
 
-    public Circle(double r) {
-        _radius = r;
+    public Circle(double radius) {
+        _radius = radius;
     }
 
-    public Circle(double r, String color) {
-        _radius = r;
+    public Circle(double radius, String color) {
+        _radius = radius;
         _color = color;
     }
 

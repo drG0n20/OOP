@@ -52,9 +52,9 @@ public class BookTest {
     @Test
     public void bookToStringTest() {
         Author author = new Author("Janusz", "email@gmail.com", 'm');
-        Book book = new Book("Tolkien", author, 23.99, 5);
-        assertEquals("Book[name=Tolkien," +
+        Book book = new Book("Tolkien", author, 2.99, 5);
+        assertEquals("Book[name=Tolkien, " +
                 author +
-                ", price=23,99, qty=5]", book.toString());
+                ", price=2,990000, qty=5]", book.toString());
     }
 }

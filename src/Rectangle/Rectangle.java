@@ -29,11 +29,11 @@ public class Rectangle {
     }
 
     public double getArea() {
-        return (2 * _width) + (2 * _length);
+        return _width * _length;
     }
 
     public double getPerimeter() {
-        return (2 * (_width + _length));
+        return ((2 * _width) + (2 * _length));
     }
 
     public String toString() {

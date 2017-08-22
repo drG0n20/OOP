@@ -12,7 +12,30 @@
 //        _radius;
 //    }
 //
-//    public MyCircle() {
-//
+//    public MyCircle(MyPoint center, int radius) {
+//        _center = center;
+//        _radius = radius;
 //    }
+//
+//    public int getRadius() {
+//        return _radius;
+//    }
+//
+//    public void setRdius(int radius) {
+//        _radius = radius;
+//    }
+//
+//    public int getCenter() {
+//        return _center;
+//    }
+//
+//    public void setCenter(MyPoint center) {
+//        _center = center;
+//    }
+//
+//    public int getCenterX() {
+//        return
+//    }
+//
+//
 //}

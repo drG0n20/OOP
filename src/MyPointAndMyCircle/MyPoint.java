@@ -42,13 +42,13 @@ public class MyPoint {
     }
 
     private double calculateDistance(int x, int y) {
-        double pX = Math.pow(x - getX(), 2);
-        double pY = Math.pow(y - getY(), 2);
+        double pX = Math.pow(x - this._x, 2.0);
+        double pY = Math.pow(y - this._y, 2.0);
         return Math.sqrt(pX + pY);
     }
 
     public Double distance(int x, int y) {
-        return calculateDistance();
+        return calculateDistance(0, 0);
     }
 
     public Double distance(MyPoint another) {

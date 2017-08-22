@@ -4,15 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SimpleCircleTest {
-
     @Test
-    public void circleGetRadiusTest() {
-        SimpleCircle simpleCircle = new SimpleCircle();
-        Assert.assertEquals(1.0d, simpleCircle.getRadius(), 0.1);
-    }
-
-    @Test
-    public void circleSetRadiusTest() {
+    public void circleSetRadiusAndGetRadiusTest() {
         SimpleCircle simpleCircle = new SimpleCircle();
         simpleCircle.setRadius(3.0);
         Assert.assertEquals(3.0, simpleCircle.getRadius(), 0.1);

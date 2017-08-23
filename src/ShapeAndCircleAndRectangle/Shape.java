@@ -34,7 +34,7 @@ public class Shape {
         if (_filled) {
             sb.append("filled");
         } else {
-            sb.append("not filled");
+            sb.append("not filled.");
         }
         return sb.toString();
     }

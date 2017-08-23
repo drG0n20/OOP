@@ -48,7 +48,7 @@ public class Rectangle extends Shape {
                 .append(_width)
                 .append(" and lenght=")
                 .append(_length)
-                .append(",which is a subclass of ")
+                .append(", which is a subclass of ")
                 .append(super.toString());
         return sb.toString();
     }

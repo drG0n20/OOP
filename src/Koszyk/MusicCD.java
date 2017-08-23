@@ -6,14 +6,22 @@ public abstract class MusicCD implements IProduct {
     protected String _title;
     protected String _performer;
 
+    @Override
     public int getPrice() {
         return _price;
     }
 
+    @Override
     public void setProductName(String name) {
         _name = name;
     }
 
+    @Override
+    public String getProductName() {
+        return _name;
+    }
+
+    @Override
     public void setPrice(int price) {
         _price = price;
     }

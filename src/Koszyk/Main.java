@@ -9,8 +9,6 @@ public class Main {
 
         IProduct zdrajca = new ZdrajcaMetalu();
         zdrajca.setPrice(23);
-        zdrajca.setPrice(67);
-        zdrajca.setPrice(56);
         System.out.println(zdrajca.getPrice());
 
     }

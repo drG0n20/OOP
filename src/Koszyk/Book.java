@@ -17,6 +17,11 @@ public abstract class Book implements IProduct {
     }
 
     @Override
+    public String getProductName() {
+        return _name;
+    }
+
+    @Override
     public void setPrice(int price) {
         _price = price;
     }

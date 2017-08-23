@@ -1,19 +1,22 @@
 package ShapeAndCircleAndRectangle;
 
 public class Square extends Rectangle {
-    public Square(){}
-    public Square(double side){
+    public Square() {
+    }
+
+    public Square(double side) {
         super(side, side);
     }
+
     public Square(double side, String color, boolean filled) {
         super(side, side, color, filled);
     }
 
-    public double getSide(){
+    public double getSide() {
         return getLength()
     }
 
-    public void setSide(double side){
+    public void setSide(double side) {
         super.setLength(side);
         super.setWidth(side);
     }
@@ -30,7 +33,7 @@ public class Square extends Rectangle {
         super.setLength(side);
     }
 
-    public String toString(){
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("A square with side=")
                 .append(getSide())

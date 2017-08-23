@@ -11,7 +11,6 @@ public class Main {
         System.out.println(rectangle);
         Square square = new Square(2.0);
         System.out.println(square);
-
     }
 }
 

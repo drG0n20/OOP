@@ -13,7 +13,7 @@ public class Square extends Rectangle {
     }
 
     public double getSide() {
-        return getLength()
+        return getLength();
     }
 
     public void setSide(double side) {
@@ -28,7 +28,7 @@ public class Square extends Rectangle {
     }
 
     @Override
-    public void setLegth(double side) {
+    public void setLength(double side) {
         super.setWidth(side);
         super.setLength(side);
     }
@@ -37,10 +37,8 @@ public class Square extends Rectangle {
         StringBuilder sb = new StringBuilder();
         sb.append("A square with side=")
                 .append(getSide())
-                .append("which is a subclass of")
+                .append(" which is a subclass of ")
                 .append(super.toString());
         return sb.toString();
     }
-
-
 }

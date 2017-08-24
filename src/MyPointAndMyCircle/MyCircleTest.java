@@ -1,20 +1,21 @@
 package MyPointAndMyCircle;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class MyCircleTest {
     @Test
     public void setRadiusAndgetRadiusTest() {
         MyCircle circle = new MyCircle(0, 0, 3);
         circle.setRadius(23);
-        Assert.assertEquals(23, circle.getRadius());
+        assertEquals(23, circle.getRadius());
     }
 
-//    @Test
-//    public void setCenterAndgetCenterTest() {
-//        MyCircle circle = new MyCircle(0, 0, 3);
-//        MyPoint myPoint = new MyPoint(1,1);
-//        Assert.assertArrayEquals(, circle.getCenter());
-//    }
+    @Test
+    public void setCenterAndgetCenterTest() {
+        MyCircle circle = new MyCircle(0, 0, 3);
+        assertEquals(0, circle.getCenter().getX());
+        assertEquals(0, circle.getCenter().getX());
+    }
 }

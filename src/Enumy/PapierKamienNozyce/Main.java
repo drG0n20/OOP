@@ -42,22 +42,31 @@ public class Main {
                     continue;
             }
 
-
             Random rand = new Random();
-            switch (decision.toLowerCase()) {
-                case "n":
-                    cpuMove = GameMoves.NOZYCE;
-                    System.out.printf("Komputer zagral nozycami\n");
-                    break;
-                case "p":
-                    cpuMove = GameMoves.PAPIER;
-                    System.out.printf("Komputer zagral papierem\n");
-                    break;
-                case "k":
-                    cpuMove = GameMoves.KAMIEN;
-                    System.out.printf("Komputer zagral kamieniem\n");
-                    break;
-            }
+            int computerInt = 0;
+            computerInt = rand.nextInt(3) + 1;
+
+            if (computerInt == 1)
+                cpuMove = GameMoves.KAMIEN;
+            else if (computerInt == 2)
+                cpuMove = GameMoves.PAPIER;
+            else if (computerInt == 3)
+                cpuMove = GameMoves.NOZYCE;
+
+//            switch (decision.toLowerCase()) {
+//                case "n":
+//                    cpuMove = GameMoves.NOZYCE;
+//                    System.out.printf("Komputer zagral nozycami\n");
+//                    break;
+//                case "p":
+//                    cpuMove = GameMoves.PAPIER;
+//                    System.out.printf("Komputer zagral papierem\n");
+//                    break;
+//                case "k":
+//                    cpuMove = GameMoves.KAMIEN;
+//                    System.out.printf("Komputer zagral kamieniem\n");
+//                    break;
+//            }
 
             GameStats result = amIWin(playerMove, cpuMove);
 

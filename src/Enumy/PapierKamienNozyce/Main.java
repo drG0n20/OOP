@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     public enum GameMoves {PAPIER, KAMIEN, NOZYCE, Q;}
-    public enum GameStats{WYGRANA, REMIS, PRZEGRANA;}
+
+    public enum GameStats {WYGRANA, REMIS, PRZEGRANA;}
 
     public static void main(String[] args) {
 
@@ -71,22 +72,29 @@ public class Main {
 
         System.out.printf("Zagrales %d gier. Wygrales: %d razy (%f). Przegrales: %d (%f)",
                 liczbaGier, zwyciestwa, (double) zwyciestwa / liczbaGier * 100, porazki);
-
     }
-//            public static GameStats amIWin(GameMoves playerMove , GameMoves cpuMove ){
-//                if(playerMove.equals(GameMoves.KAMIEN)&&(cpuMove.equals(GameMoves.KAMIEN)))
-//                    return GameStats.REMIS;
-//
-//
-//                if(playerMove.equals(GameMoves.PAPIER)&&(cpuMove.equals(GameMoves.PAPIER)))
-//                    return GameStats.REMIS;
-//                if(playerMove.equals(GameMoves.NOZYCE)&&(cpuMove.equals(GameMoves.NOZYCE)))
-//                    return GameStats.REMIS;
-//            if(playerMove.equals(GameMoves.KAMIEN)&&(cpuMove.equals(GameMoves.PAPIER)))
-//                    return GameStats.PRZEGRANA;
-//                if(playerMove.equals(GameMoves.KAMIEN)&&(cpuMove.equals(GameMoves.KAMIEN)))
-//                    return GameStats.PRZEGRANA;
 
+    public static GameStats amIWin(GameMoves playerMove, GameMoves cpuMove) {
+        if (playerMove.equals(GameMoves.KAMIEN) && (cpuMove.equals(GameMoves.KAMIEN)))
+            return GameStats.REMIS;
+        if (playerMove.equals(GameMoves.KAMIEN) && (cpuMove.equals(GameMoves.PAPIER)))
+            return GameStats.PRZEGRANA;
+        if (playerMove.equals(GameMoves.KAMIEN) && (cpuMove.equals(GameMoves.NOZYCE)))
+            return GameStats.WYGRANA;
+        if (playerMove.equals(GameMoves.PAPIER) && (cpuMove.equals(GameMoves.PAPIER)))
+            return GameStats.REMIS;
+        if (playerMove.equals(GameMoves.PAPIER) && (cpuMove.equals(GameMoves.KAMIEN)))
+            return GameStats.WYGRANA;
+        if (playerMove.equals(GameMoves.PAPIER) && (cpuMove.equals(GameMoves.NOZYCE)))
+            return GameStats.PRZEGRANA;
+        if (playerMove.equals(GameMoves.NOZYCE) && (cpuMove.equals(GameMoves.NOZYCE)))
+            return GameStats.REMIS;
+        if (playerMove.equals(GameMoves.NOZYCE) && (cpuMove.equals(GameMoves.PAPIER)))
+            return GameStats.WYGRANA;
+        if (playerMove.equals(GameMoves.NOZYCE) && (cpuMove.equals(GameMoves.KAMIEN)))
+            return GameStats.PRZEGRANA;
+        return null;
+    }
 }
 
 

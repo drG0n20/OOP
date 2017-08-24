@@ -42,6 +42,7 @@ public class Main {
                     continue;
             }
 
+
             Random rand = new Random();
             switch (decision.toLowerCase()) {
                 case "n":

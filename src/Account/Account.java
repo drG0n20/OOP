@@ -35,7 +35,7 @@ public class Account {
 
     public int debit(int amount) {
         if (amount <= _balance) {
-            int p = amount - _balance;
+            _balance = _balance - amount;
         } else {
             System.out.println("Amount exceeded balance");
         }
@@ -44,7 +44,8 @@ public class Account {
 
     public int transferTo(Account another, int amount) {
         if (amount <= _balance) {
-            int p = amount - _balance;
+            another._balance = another._balance + amount;
+            _balance = _balance - amount;
         } else {
             System.out.println("Amount exceeded balance");
         }

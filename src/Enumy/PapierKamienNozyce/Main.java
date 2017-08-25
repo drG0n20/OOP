@@ -9,10 +9,6 @@ public class Main {
     public enum GameStats {WYGRANA, REMIS, PRZEGRANA;}
 
     public static void main(String[] args) {
-
-        System.out.println("Zagrajmy w Papier, Kamien, Nozyce\n" +
-                "nacisnij n - nozyce, p - papier, k - kamien.");
-
         Scanner sc = new Scanner(System.in);
 
         GameMoves playerMove = GameMoves.KAMIEN;
@@ -24,6 +20,8 @@ public class Main {
         int liczbaGier = 0;
 
         while (!playerMove.equals(GameMoves.Q)) {
+            System.out.println("Zagrajmy w Papier, Kamien, Nozyce\n" +
+                    "nacisnij n - nozyce, p - papier, k - kamien.");
             String decision = sc.next();
             switch (decision.toLowerCase()) {
                 case "n":
@@ -43,30 +41,21 @@ public class Main {
             }
 
             Random rand = new Random();
-            int computerInt = 0;
-            computerInt = rand.nextInt(3) + 1;
 
-            if (computerInt == 1)
-                cpuMove = GameMoves.KAMIEN;
-            else if (computerInt == 2)
-                cpuMove = GameMoves.PAPIER;
-            else if (computerInt == 3)
-                cpuMove = GameMoves.NOZYCE;
-
-//            switch (decision.toLowerCase()) {
-//                case "n":
-//                    cpuMove = GameMoves.NOZYCE;
-//                    System.out.printf("Komputer zagral nozycami\n");
-//                    break;
-//                case "p":
-//                    cpuMove = GameMoves.PAPIER;
-//                    System.out.printf("Komputer zagral papierem\n");
-//                    break;
-//                case "k":
-//                    cpuMove = GameMoves.KAMIEN;
-//                    System.out.printf("Komputer zagral kamieniem\n");
-//                    break;
-//            }
+            switch (rand.nextInt(3)) {
+                case 0:
+                    cpuMove = GameMoves.NOZYCE;
+                    System.out.printf("Komputer zagrał nożycami\n");
+                    break;
+                case 1:
+                    cpuMove = GameMoves.KAMIEN;
+                    System.out.printf("Komputer zagrał kamieniem\n");
+                    break;
+                case 2:
+                    cpuMove = GameMoves.PAPIER;
+                    System.out.printf("Komputer zagrał papierem\n");
+                    break;
+            }
 
             GameStats result = amIWin(playerMove, cpuMove);
 
@@ -79,9 +68,9 @@ public class Main {
 
             liczbaGier++;
         }
-
-        System.out.printf("Zagrales %d gier. Wygrales: %d razy (%f). Przegrales: %d (%f)",
-                liczbaGier, zwyciestwa, (double) zwyciestwa / liczbaGier * 100, porazki);
+        System.out.printf("Zagrales %d gier. Wygrales: %d razy (%.0f%%). Przegrales: %d razy (%.0f%%)",
+                liczbaGier, zwyciestwa, (double) zwyciestwa / liczbaGier * 100, porazki,
+                (double) porazki / liczbaGier * 100);
     }
 
     public static GameStats amIWin(GameMoves playerMove, GameMoves cpuMove) {
@@ -103,7 +92,7 @@ public class Main {
             return GameStats.WYGRANA;
         if (playerMove.equals(GameMoves.NOZYCE) && (cpuMove.equals(GameMoves.KAMIEN)))
             return GameStats.PRZEGRANA;
-        return null;
+        return GameStats.REMIS;
     }
 }
 

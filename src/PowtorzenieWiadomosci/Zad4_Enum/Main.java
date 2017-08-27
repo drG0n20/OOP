@@ -48,6 +48,8 @@ public class Main {
                     cpuMoves = GameMoves.RESZKA;
                     System.out.printf("Cpu wylosowal: reszka\n");
                     break;
+                default:
+                    break;
             }
 
             GameStats result = amIWin(playerMoves, cpuMoves);

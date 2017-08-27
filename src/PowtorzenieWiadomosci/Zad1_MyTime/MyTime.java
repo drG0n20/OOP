@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci.Data;
+package PowtorzenieWiadomosci.Zad1_MyTime;
 
 public class MyTime {
     private int _hour = 0;
@@ -82,4 +82,37 @@ public class MyTime {
     public String toString() {
         return String.format("%02d:%02d:%02d", _hour, _minute, _second);
     }
+
+    public MyTime previousSecond() {
+        if (_second != 0) {
+            _second = _second - 1;
+        } else {
+            _second = 59;
+            previousMinute();
+        }
+        return this;
+    }
+
+    public MyTime previousMinute() {
+        if (_minute != 0) {
+            _minute = _minute - 1;
+        } else {
+            _minute = 59;
+            previousHour();
+        }
+        return this;
+    }
+
+    public MyTime previousHour() {
+        if (_hour != 0) {
+            _hour = _hour - 1;
+        } else {
+            _hour = 23;
+            previousSecond();
+        }
+        return this;
+    }
 }
+
+
+

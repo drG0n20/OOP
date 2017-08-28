@@ -1,4 +1,4 @@
-package Sorter_STRATEGIA;
+package STRATEGIA_Sorter;
 
 public class BubbleSort implements ISort {
     @Override

@@ -1,4 +1,4 @@
-package SymulatorKaczki_STRATEGIA;
+package STRATEGIA_SymulatorKaczki;
 
 public abstract class Kaczka {
     protected ILatanie latanie;

@@ -1,4 +1,4 @@
-package Sorter_STRATEGIA;
+package STRATEGIA_Sorter;
 
 public final class Sorter {
     private ISort _sortowanie;

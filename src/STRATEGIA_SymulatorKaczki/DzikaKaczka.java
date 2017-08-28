@@ -1,4 +1,4 @@
-package SymulatorKaczki_STRATEGIA;
+package STRATEGIA_SymulatorKaczki;
 
 public class DzikaKaczka extends Kaczka {
     public DzikaKaczka() {

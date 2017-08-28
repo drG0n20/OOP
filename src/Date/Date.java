@@ -27,7 +27,7 @@ public class Date {
         _day = day;
     }
 
-    public void set_month(int month) {
+    public void setMonth(int month) {
         _month = month;
     }
 
@@ -51,6 +51,6 @@ public class Date {
     }
 
     public String toString() {
-        return String.format("%d/%d/%d", _day, _month, _year);
+        return String.format("%02d/%02d/%d", _day, _month, _year);
     }
 }

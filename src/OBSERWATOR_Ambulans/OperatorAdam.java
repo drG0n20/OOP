@@ -4,42 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OperatorAdam implements IOperator {
-    //deklaracja zmiennych obiektowych
-    private List<IObserwator> obserwatorzy;
-    private float _temperatura;
-    private float _cisnienie;
-    private float _wilgotnosc;
+    List<IAmbulance> ambulances = new ArrayList<>();
+    private String status = "";
 
-    public OperatorAdam() {
-        obserwatorzy = new ArrayList<>();
-    }
-
-    public void odczytyZmiennych() {
-        powiadomObserwatora();
+    @Override
+    public void registerObserver(IAmbulance ambulance) {
+        ambulances.add(ambulance);
     }
 
     @Override
-    public void zarejestrujObserwatora(IObserwator obserwator) {
-        obserwatorzy.add(obserwator);
+    public void removeObserver(IAmbulance ambulance) {
+        ambulances.remove(ambulance);
     }
 
     @Override
-    public void usunObserwatora(IObserwator obserwator) {
-        obserwatorzy.remove(obserwator);
-    }
-
-    @Override
-    public void powiadomObserwatora() {
-        for (IObserwator obserwator : obserwatorzy) {
-            obserwator.aktualizuj(_temperatura, _cisnienie, _wilgotnosc);
+    public void notifyObservers() {
+        for (IAmbulance ambulance : ambulances) {
+            ambulance.update();
         }
     }
 
-    public void ustawZmienne(float temperatura, float cisnienie, float wilgotnosc) {
-        _temperatura = temperatura;
-        _cisnienie = cisnienie;
-        _wilgotnosc = wilgotnosc;
-        odczytyZmiennych();
+    public void setStatus(String status) {
+        this.status = status;
+        notifyObservers();
     }
-    //jakas dalsza logika
 }

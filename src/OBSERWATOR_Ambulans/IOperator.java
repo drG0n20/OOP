@@ -1,9 +1,9 @@
 package OBSERWATOR_Ambulans;
 
 public interface IOperator {
-    void registerObserver();
+    void registerObserver(IAmbulance ambulance);
 
-    void removeObserver();
+    void removeObserver(IAmbulance ambulance);
 
-    void notifyObserver();
+    void notifyObservers();
 }

@@ -6,4 +6,6 @@ public interface IOperator {
     void removeObserver(IAmbulance ambulance);
 
     void notifyObservers();
+
+    String getStatus();
 }

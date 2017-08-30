@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci.Zad2_Kompozycja_i_Agregacja;
+package PowtorzenieWiadomosci25082017.Zad2_Kompozycja_i_Agregacja;
 
 public class Main {
     public static void main(String[] args) {

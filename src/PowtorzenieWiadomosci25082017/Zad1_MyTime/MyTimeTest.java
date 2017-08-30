@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci.Zad1_MyTime;
+package PowtorzenieWiadomosci25082017.Zad1_MyTime;
 
 import org.junit.Assert;
 import org.junit.Test;

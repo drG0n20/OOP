@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci.Zad1_MyTime;
+package PowtorzenieWiadomosci25082017.Zad1_MyTime;
 
 public class Main {
     public static void main(String[] args) {

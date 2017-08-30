@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci.Zad3_Dziedziczenie;
+package PowtorzenieWiadomosci25082017.Zad3_Dziedziczenie;
 
 public class Student extends Person {
     private String _program;

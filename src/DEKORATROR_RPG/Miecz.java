@@ -1,11 +1,11 @@
 package DEKORATROR_RPG;
 
-public abstract class Tarcza {
+public abstract class Miecz {
     protected String opis;
 
     public String pobierzOpis() {
         return opis;
     }
 
-    public abstract double obrona();
+    public abstract double atak();
 }

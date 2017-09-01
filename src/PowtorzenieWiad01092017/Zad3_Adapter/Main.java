@@ -11,7 +11,7 @@ public class Main {
         DolceGustotoTassimoAdapter adapter = new DolceGustotoTassimoAdapter(dg);
         ArrayList<ITassimo> kawy = new ArrayList<>();
         kawy.add(tassimo);
-        kawy.add(dg);
+        kawy.add(adapter);
         parzenieKawy(kawy);
     }
 

@@ -15,7 +15,7 @@ public class Main {
 //        uruchomKwakanieILatanie(ptaki);
         ArrayList<IIndyk> ptaki = new ArrayList<>();
         ptaki.add(indyk);
-        ptaki.add(ka);
+        ptaki.add(kaczka);
         uruchomGulganieILatanie(ptaki);
     }
 

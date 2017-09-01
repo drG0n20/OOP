@@ -8,7 +8,9 @@ public class Main {
         ThirdAmbulance thirdAmbulance = new ThirdAmbulance(operatorAdam);
 
         operatorAdam.setStatus("Car accident");
+        Thread.sleep(3000);
         operatorAdam.setStatus("Faint");
+        Thread.sleep(3000);
         operatorAdam.setStatus("Broken bone");
     }
 }

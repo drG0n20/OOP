@@ -3,6 +3,7 @@ package DEKORATROR_RPG;
 public class Main {
     public static void main(String[] args) {
         Bohater bohater = new Bohater("Janusz");
+        bohater.setImie("Borobir");
         PlecakBezDna plecakBezDna = new PlecakBezDna();
         PD_FoliaNaPlecak foliaNaPlecak = new PD_FoliaNaPlecak(plecakBezDna);
 
@@ -11,6 +12,7 @@ public class Main {
         MD_LuskaSmoka md_luskaSmoka = new MD_LuskaSmoka(mieczSwietlny);
 
         Bohater bohater3 = new Bohater("Sebek");
+
         TarczaAzbestowa tarczaAzbestowa = new TarczaAzbestowa();
         TD_PtasieDzioby td_ptasieDzioby = new TD_PtasieDzioby(tarczaAzbestowa);
         TD_DiodyLed tdDiodyLed = new TD_DiodyLed(td_ptasieDzioby);

@@ -3,7 +3,7 @@
 //import java.util.Arrays;
 //import java.util.Random;
 //
-//public class RadioFM implements AnalogSignal {
+//public class RadioFM implements IAnalogSignal {
 //    private double[] _analogData;
 //    Random rand = new Random();
 //
@@ -11,13 +11,6 @@
 //        double[] tab = rand.doubles(16, 0.0, 2.0).toArray();
 //        return tab;
 //    }
-//
-//    public double[] zeroAndOne() {
-////        for (int i = 0; i <getRand().length ; i++) {
-//        //TODO
-//    }
-//
-//}
 //
 //    @Override
 //    public double[] getAnalog() {

@@ -14,7 +14,7 @@ public class Bohater {
     public void setImie(String imie) {
         _imie = _imie;
     }
-    
+
     public String toString() {
         return String.format("%s", _imie);
     }

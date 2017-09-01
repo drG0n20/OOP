@@ -16,6 +16,7 @@ public class Main {
         TD_DiodyLed tdDiodyLed = new TD_DiodyLed(td_ptasieDzioby);
         TD_TrupieCzachy tdTrupieCzachy = new TD_TrupieCzachy(tdDiodyLed);
 
+
         System.out.printf("%s znalazles %s.\nOtrzymujesz +%.1f do miejsca.\n", bohater.toString(),
                 foliaNaPlecak.pobierzOpis(), foliaNaPlecak.miejsce());
         System.out.println();

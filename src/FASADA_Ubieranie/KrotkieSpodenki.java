@@ -1,6 +1,6 @@
 package FASADA_Ubieranie;
 
-public class Spodenki implements IUbranie {
+public class KrotkieSpodenki implements IUbranie {
 
     @Override
     public void zalozUbranie() {

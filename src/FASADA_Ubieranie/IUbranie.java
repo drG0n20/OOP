@@ -2,8 +2,8 @@ package FASADA_Ubieranie;
 
 public interface IUbranie {
 
-    public void zalozUbranie();
+    void zalozUbranie();
 
-    public void zdejmijUbranie();
+    void zdejmijUbranie();
 
 }

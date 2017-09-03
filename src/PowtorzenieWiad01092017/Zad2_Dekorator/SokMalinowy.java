@@ -1,4 +1,4 @@
-package PowtorzenieWiad01092017.Zad2_Dekorator_Bimber;
+package PowtorzenieWiad01092017.Zad2_Dekorator;
 
 public class SokMalinowy extends BimberDekorator {
     private Napoj _napoj;

@@ -2,8 +2,8 @@ package FASADA_Ubieranie;
 
 public interface IUbranieNaPoreRoku {
 
-    public void ubierzSie();
+    void ubierzSie();
 
-    public void rozbierzSie();
+    void rozbierzSie();
 
 }

@@ -79,10 +79,6 @@ public class MyTime {
         return this;
     }
 
-    public String toString() {
-        return String.format("%02d:%02d:%02d", _hour, _minute, _second);
-    }
-
     public MyTime previousSecond() {
         if (_second != 0) {
             _second = _second - 1;
@@ -111,6 +107,10 @@ public class MyTime {
             previousSecond();
         }
         return this;
+    }
+
+    public String toString() {
+        return String.format("%02d:%02d:%02d", _hour, _minute, _second);
     }
 }
 

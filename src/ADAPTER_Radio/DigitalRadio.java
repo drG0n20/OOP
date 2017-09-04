@@ -1,23 +1,22 @@
-//package ADAPTER_Radio;
-//
-//import java.util.Arrays;
-//
-//public class DigitalRadio implements IDigitalSignal {
-//    private double[] _digitalData;
-//
-//
-//    @Override
-//    public double[] getDigit() {
-//        return new double[0];
-//    }
-//
-//    @Override
-//    public void setDigit(double[] digitData) {
-//        _digitalData = digitData;
-//    }
-//
-//    @Override
-//    public void printDigit() {
-//        System.out.printf("%s", Arrays.toString(getRand()));
-//    }
-//}
+package ADAPTER_Radio;
+
+public class DigitalRadio implements IDigitalSignal {
+    private int[] _digitalData;
+
+    @Override
+    public int[] getDigit() {
+        return _digitalData;
+    }
+
+    @Override
+    public void setDigit(int[] digitData) {
+        _digitalData = digitData;
+    }
+
+    @Override
+    public void printDigit() {
+        for (int digitSig : _digitalData) {
+            System.out.printf("%s", digitSig);
+        }
+    }
+}

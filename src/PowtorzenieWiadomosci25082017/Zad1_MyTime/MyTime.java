@@ -22,7 +22,7 @@ public class MyTime {
         if (hour < 24 && hour >= 0) {
             _hour = hour;
         } else {
-            _hour = -100000;
+            _hour = -10000;
         }
     }
 
@@ -30,7 +30,7 @@ public class MyTime {
         if (minute < 60 && minute >= 0) {
             _minute = minute;
         } else {
-            _minute = -100000;
+            _minute = -10000;
         }
     }
 
@@ -38,7 +38,7 @@ public class MyTime {
         if (second < 60 && second >= 0) {
             _second = second;
         } else {
-            _second = -100000;
+            _second = -10000;
         }
     }
 
@@ -68,8 +68,8 @@ public class MyTime {
         if (_minute != 59) {
             _minute = _minute + 1;
         } else {
-            nextHour();
             _minute = 0;
+            nextHour();
         }
         return this;
     }
@@ -104,7 +104,6 @@ public class MyTime {
             _hour = _hour - 1;
         } else {
             _hour = 23;
-            previousSecond();
         }
         return this;
     }

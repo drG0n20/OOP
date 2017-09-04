@@ -1,10 +1,9 @@
-//package ADAPTER_Radio;
-//
-//public interface IAnalogSignal {
-//
-//    public double[] getAnalog();
-//
-//    public void setAnalog(double[] analogData);
-//
-//    public void printAnalog();
-//}
+package ADAPTER_Radio;
+
+public interface IAnalogSignal {
+    double[] getAnalog();
+
+    void setAnalog(double[] analogData);
+
+    void printAnalog();
+}

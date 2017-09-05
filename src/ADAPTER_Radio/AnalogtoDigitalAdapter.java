@@ -10,6 +10,8 @@
 //    @Override
 //    public int[] getDigit() {
 //        return (int[]) _analogSignal.getAnalog();
+//    public double[] getDigit() {
+//        return _analogSignal.getAnalog();
 //    }
 //
 //    @Override

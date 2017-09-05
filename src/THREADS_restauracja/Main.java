@@ -1,4 +1,4 @@
-package THREADS_ex;
+package THREADS_restauracja;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

@@ -1,4 +1,4 @@
-package THREADS_ex;
+package THREADS_restauracja;
 
 
 import java.util.Scanner;

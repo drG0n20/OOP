@@ -11,8 +11,24 @@
       <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="STRATEGIA_SymulatorKaczki.Main" />
       <compartment-visibility />
     </diagram>
+    <diagram name="OBSERWATOR_Ambulans">
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="OBSERWATOR_Ambulans.Main" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="OBSERWATOR_Ambulans.IOperator" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="OBSERWATOR_Ambulans.IAmbulance" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="OBSERWATOR_Ambulans.OperatorAdam" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="OBSERWATOR_Ambulans.FirstAmbulance" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="OBSERWATOR_Ambulans.ThirdAmbulance" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="OBSERWATOR_Ambulans.SecondAmbulance" />
+      <compartment-visibility />
+    </diagram>
     <diagram name="STRATEGIA_SymulatorKaczk">
       <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="STRATEGIA_SymulatorKaczki.IKwakanie" />
+      <compartment-visibility />
+    </diagram>
+    <diagram name="Generics">
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="Generics.Main" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="Generics.Rower" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="Generics.Suitcase" />
       <compartment-visibility />
     </diagram>
   </component>

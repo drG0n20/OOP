@@ -13,6 +13,8 @@ public class Main {
 
     public static int numberOfLines() {
         int count = 0;
+        String s = "";
+        String trim = s.trim();
         try {
             File plik = new File("tekst.txt");
             FileReader czytnikFile = new FileReader(plik);
@@ -21,8 +23,14 @@ public class Main {
             while ((wiersz = czytnikBuffered.readLine()) != null) {
                 System.out.println(wiersz);
                 count++;
+                if (trim.isEmpty()) {
+                    return 0;
+                } else {
+                    return trim.split("\\s+\\W").length;
+                }
             }
             czytnikBuffered.close();
+            System.out.println("\nLiczba linijek tekstu:");
         } catch (Exception e) {
             e.printStackTrace();
         }

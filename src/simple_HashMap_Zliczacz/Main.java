@@ -1,19 +1,31 @@
 package simple_HashMap_Zliczacz;
 
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.FileReader;
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
-//        PrintWriter zapis = new PrintWriter("ala.txt");
-//        zapis.println("Ala ma kota, a kot ma Alę");
-//        zapis.close();
+    public static void main(String[] args) {
+        System.out.println(numberOfLines());
+        System.out.println();
 
-        File plik = new File("dupa.txt");
-        Scanner sc = new Scanner(new File("dupa.txt"));
-        String zdanie = sc.nextLine();
-        sc.nextLine();
-        System.out.println(zdanie);
+    }
+
+    public static int numberOfLines() {
+        int count = 0;
+        try {
+            File plik = new File("tekst.txt");
+            FileReader czytnikFile = new FileReader(plik);
+            BufferedReader czytnikBuffered = new BufferedReader(czytnikFile);
+            String wiersz = null;
+            while ((wiersz = czytnikBuffered.readLine()) != null) {
+                System.out.println(wiersz);
+                count++;
+            }
+            czytnikBuffered.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return count;
     }
 }

@@ -9,5 +9,4 @@ public class ArraySearcher {
         }
         throw new ArrayStoreException("Nie znaleziono elementu!");
     }
-
 }

@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci25082017.Zad2_Kompozycja_i_Agregacja;
+package PowtorzenieWiad25082017.Zad2_Kompozycja_i_Agregacja;
 
 public class Person {
     private String _name;

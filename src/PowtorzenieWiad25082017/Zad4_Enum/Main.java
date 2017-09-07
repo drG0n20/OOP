@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci25082017.Zad4_Enum;
+package PowtorzenieWiad25082017.Zad4_Enum;
 
 import java.util.Random;
 import java.util.Scanner;

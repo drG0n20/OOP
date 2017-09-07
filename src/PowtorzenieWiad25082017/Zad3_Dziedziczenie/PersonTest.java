@@ -1,4 +1,4 @@
-package PowtorzenieWiadomosci25082017.Zad3_Dziedziczenie;
+package PowtorzenieWiad25082017.Zad3_Dziedziczenie;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -14,20 +14,20 @@ public class Main {
     public static int numberOfLines() {
         int count = 0;
         String s = "";
-        String trim = s.trim();
         try {
-            File plik = new File("tekst.txt");
+            File plik = new File("ala.txt");
             FileReader czytnikFile = new FileReader(plik);
             BufferedReader czytnikBuffered = new BufferedReader(czytnikFile);
             String wiersz = null;
             while ((wiersz = czytnikBuffered.readLine()) != null) {
-                System.out.println(wiersz);
+                String replace = wiersz.replaceAll("(\\.\,)", "");
+                System.out.print(replace);
                 count++;
-                if (trim.isEmpty()) {
-                    return 0;
-                } else {
-                    return trim.split("\\s+\\W").length;
-                }
+//                if (trim.isEmpty()) {
+//                    return 0;
+//                } else {
+//                    return trim.split("\\s+\\W").length;
+//                }
             }
             czytnikBuffered.close();
             System.out.println("\nLiczba linijek tekstu:");
